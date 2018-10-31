@@ -26,7 +26,7 @@ abstract class AbstractProvider
 
     public function process(): string
     {
-        return \preg_replace_callback('/(\w*)/u', [$this, 'sortChars'], $this->text);
+        return \preg_replace_callback('/(\w+)/u', [$this, 'sortChars'], $this->text);
     }
 
     protected function sortChars(array $matches): string

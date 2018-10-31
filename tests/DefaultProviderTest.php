@@ -13,7 +13,8 @@ class DefaultProviderTest extends TestCase
         return [
             ['', ''],
             ['lemon orange banana apple', 'elmno aegnor aaabnn aelpp'],
-            ["lemon\norange\r\nbanana\tapple", "elmno\naegnor\r\naaabnn\taelpp"],
+            ['lemon  orange   banana    apple', 'elmno  aegnor   aaabnn    aelpp'],
+            ["\nlemon\n\norange\r\nbanana\tapple", "\nelmno\n\naegnor\r\naaabnn\taelpp"],
             ['test#word', 'estt#dorw'],
             ['лимон апельсин банан яблоко', 'илмно аеилнпсь аабнн бклооя'],
             ['αβγαβγ αβγαβγαβγ', 'ααββγγ αααβββγγγ'],
