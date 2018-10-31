@@ -17,7 +17,7 @@ class Sorter
     {
         if (\extension_loaded(static::INTL_EXTENSION_NAME)) {
             $this->provider = new IntlProvider($text, $locale);
-        } elseif (\setlocale(\LC_CTYPE, 0) !== \getenv('LANG')) {
+        } elseif (\setlocale(\LC_COLLATE, 0) !== 'C') {
             $this->provider = new LocaleProvider($text, $locale);
         } else {
             $this->provider = new DefaultProvider($text, $locale);

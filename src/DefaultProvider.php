@@ -7,6 +7,7 @@ namespace Noldors\Sipuni;
 class DefaultProvider extends AbstractProvider
 {
     private const MODIFIER = 0.5;
+
     private const EXCEPTION_CHARS = ['ё' => 'е'];
 
     protected function sort(array $chars): array

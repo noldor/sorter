@@ -46,6 +46,9 @@
         "coverage": [
             "php -dzend_extension=xdebug.so ./vendor/bin/phpunit --coverage-text --coverage-html=build/coverage"
         ],
+        "coverage-show": [
+          "xdg-open ./build/coverage/index.html > /dev/null"
+        ],
         "cs": [
             "vendor/bin/php-cs-fixer fix -v --dry-run",
             "vendor/bin/phpcs --standard=phpcs.xml src;"

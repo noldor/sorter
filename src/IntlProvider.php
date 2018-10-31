@@ -26,9 +26,4 @@ class IntlProvider extends AbstractProvider
 
         return $chars;
     }
-
-    protected function sortFunction(string $a, string $b): int
-    {
-        return $this->collator->compare($a, $b);
-    }
 }
