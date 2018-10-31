@@ -37,7 +37,7 @@ $locale можно не передавать, тогда будет исполь
 use Noldors\Sipuni\Sorter;
 
 $text = 'some text';
-$locale = 'ru_RU.UTF-8';
+$locale = 'en_US.UTF-8';
 
 $sorter = new Sorter($text, $locale);
 // or
